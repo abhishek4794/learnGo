@@ -8,13 +8,15 @@ func main() {
 	// for i, card := range cards {
 	// 	fmt.Println(i, card)
 	// }
-	hand, remainingDeck := deal(cards, 5)
-	hand.print()
-	remainingDeck.print()
+	//hand, remainingDeck := deal(cards, 5)
+	//hand.print()
+	//remainingDeck.print()
 	deckString := cards.toString()
 	fmt.Println(deckString)
 	cards.saveToFile("cards.csv")
-	newDeck := newDeckFromFile("cards.csv")
-	newDeck.print()
+	//newDeck := newDeckFromFile("cards.csv")
+	//newDeck.print()
 	//cards.print()
+	cards.shuffle()
+	cards.print()
 }
